@@ -4,39 +4,9 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>IRCTC Clone Page</title>
+    <link rel="stylesheet" href="irctc-clone.css">
+    <!-- <script src="https://cdn.tailwindcss.com"></script> -->
 </head>
-<style>
-    *{
-        margin: 0;
-        padding: 0;
-    }
-    body{
-        display: grid;
-        grid-template-columns: 55% 45%;
-        width: 100%;
-        height: 100vh;
-        margin: 0 30px;
-    }
-    nav{
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        width: 100%;
-        height: 20vh;
-    }
-    .menu ul{
-        display: flex;
-        justify-content: space-evenly;
-        align-items: center;
-        list-style-type: none;
-        width: 25vw;
-    }
-    .image{
-        height: 100vh;
-        width: 100%;
-    }
-    
-</style>
 <body>
     <section class="left">
     <header>
@@ -48,7 +18,7 @@
             <div class="menu">
                 <ul>
                     <li><p>Ask Disha</p>
-                    <button>Login</button></li>
+                    <button id="login-btn">Login</button></li>
                     <li><p>Contact us</p>
                     <button>Register</button></li>
                     <li><p>Alerts</p>
@@ -59,16 +29,37 @@
         <main>
             <div class="heading">
             <h1>Indian Railways</h1>
-            <span>Safety</span>
-            <span>Security</span>
-            <span>Punctuality</span>
+            <span class="safety">Safety</span>
+            <span class="security">Security</span>
+            <span class="puntuality">Punctuality</span>
         </div>
         <div class="btns">
-            <button>BOOK Ticket</button>
-            <button>PNR Status</button>
-            <button>Charts/Vacancy</button>
+            <button class="bookbtn"><img src="Vector.png" alt=""><h3>BOOK Ticket</h3></button>
+            <button class="pnrbtn"><img src="done_FILL0_wght400_GRAD0_opsz48 (1) 1.png" alt=""><h3>PNR Status</h3></button>
+            <button class="chartsbtn"><img src="insert_chart_FILL0_wght400_GRAD0_opsz48 1.png" alt=""><h3>Charts / Vacancy</h3></button>
         </div>
         <div class="routes">
+            <div class="from">
+                <img src="ic-search-from-desktop.png" alt="">
+                <div class="from-details">
+                    <label for="from">From
+                <select name="from" >From</select></label>
+                <h2>Bangalore</h2>
+                <p>KSR - Bangalore<h3>
+                </div>
+            </div>
+
+            <img class="direction" src="sync_alt_FILL0_wght300_GRAD0_opsz48 1.png">
+
+            <div class="to">
+                <img src="Group.png" alt="">
+                <div class="to-details">
+                    <label for="from">From
+                        <select name="from" >From</select></label>
+                <h2>Kasaragod</h2>
+                <p>KSR - Kasaragod</p>
+            </div>
+            </div>
 
         </div>
         <div class="search">
@@ -78,7 +69,7 @@
     </header>
     </section>
     <section class="right">
-        <img class=image src="https://s3-alpha-sig.figma.com/img/f0b6/593e/8ed12a7f02e29fd012b3cf6cbfb90252?Expires=1736726400&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=Wx-I8HuzO6l98Ye4NMak9Hlz~d7R26eZzLJxJj4bHDqYQZFuF7nUVTiewKlFuaDUGI8aXdzW45lxWYJ2JfVye3EWW8RcGNTq88kVgm-o7jZl5z~YkJmrejV8ZbNHwUwps82Gm8sOT1gMukZtZCsyORWctVYnUO~0dfhqC~WgWTpWkhvJSn1B6Rn7QnUG0Q~fggJSuqGZSaqu5~N2z2cBzFQDHCXVk40T5XeB1W8RdZn90Qvkz8ShPbDjJpbavc4zWswJvI050pdP17-T5hv8sO3MaE2uBlPNsRzKxjpWnLKIQ7Ut0PAEzqTIrPruNI~oVn0FU~y04uJIfSOVG0Hp4Q__" alt="">
+        <img src="Rail.png" alt="">
     </section>
 </body>
 </html>
